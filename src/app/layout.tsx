@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+// Using system fonts as fallback for deployment issues
+// const poppins = Poppins({
+//   variable: "--font-poppins", 
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700"],
+//   display: 'swap',
+//   fallback: ['system-ui', 'arial'],
+// });
 
 export const metadata: Metadata = {
   title: "Mood Tracker - Your Personal Mental Health Companion",
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} font-poppins antialiased`}
+        className="font-sans antialiased"
       >
         {children}
       </body>
