@@ -25,7 +25,7 @@ export default function CompleteStep({ onReset, onViewJourney }: CompleteStepPro
           onClick={onReset}
           className="py-4 px-8 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-medium transition-all duration-300 mb-8 cursor-pointer"
         >
-          Log Another Emotion
+          Check in again
         </button>
 
         <div>
